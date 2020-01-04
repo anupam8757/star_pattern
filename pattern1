@@ -1,0 +1,30 @@
+/* problem is to print the star pattern
+*
+* *
+* * *
+* * * *
+* * * * *
+Number of row is Entered by user*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    int n;
+    cout<<"Enter a number of Row\n";
+    cin>>n;
+    for(int i=0;i<=n;i++)
+    {
+        for(int j=0;j<=n;j++)
+        {
+            if(j<i)
+            cout<<"*";
+            else
+                cout<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
