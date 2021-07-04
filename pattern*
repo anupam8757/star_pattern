@@ -1,0 +1,29 @@
+/*
+   1   
+  121  
+ 12321 
+1234321 */
+#include <iostream>
+using namespace std;
+int main() {
+    int row;
+    cin>>row;
+    int k=1;
+    for(int i=0;i<row;i++)
+    {
+       k=1;
+        for(int j=0;j<7;j++)
+        {
+         if(j>= 3-i && j<=3+i)
+         {
+           cout<<k;
+        j<3?k++:k--;
+         }
+        else
+        cout<<" ";
+        }
+        cout<<endl;
+          //  k++;
+    }
+    cout<<"Hello World!";
+}
